@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .outer-box {
+      width : 400px; 
+      height: 200px;
+      border: 2px solid black;
+      /* border를 설정해줄때 일반적인 방법  */
+      color: red;
+      text-align: center;
+      /* 가운데정렬 */
+    }
+
+   
+    .inner-box {
+      width : 200px;
+      height: 100px;
+      color: initial;
+      /* 빨간색으로 바뀌는거 막는다. */
+      text-align: initial;
+      /* 동일하게 가운데 정렬로 상속되는거 막는다. */
+      border: inherit;
+      /* 상속 받을 때 inherit; 사용  */
+    }
+
+  </style>
+</head>
+<body>
+  <div class="outer-box">
+    <div>
+      <span>첫 번째</span>
+    </div>
+    <div class="inner-box">
+      <span>두 번째</span>
+    </div>
+  </div>
+</body>
+</html>

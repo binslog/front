@@ -1,0 +1,51 @@
+
+.box{
+  width: 800px;
+  height: 800px;
+  border: 2px solid black;
+}
+
+.one-line{
+    font-size: 0px;
+}
+
+
+
+.white-box{
+  display: inline-block;
+/*inline은 설정이 불가능 해서 inline-block으로 바꾸어야한다. */
+  width: 100px;
+  height: 100px;    
+  background-color: white;
+
+}
+
+
+.black-box{
+  display: inline-block;
+  width: 100px;
+  height: 100px;    
+  background-color: black; 
+
+}
+
+
+.black-pawn{
+    background-image: url(./black_pawn.png);
+    background-size: cover;
+}
+
+.white-queen{
+    background-image: url(./white_queen.png);
+    background-size: cover;
+}
+
+.white-rook{
+    background-image: url(./white_rook.png);
+    background-size: cover;
+}
+
+.white-king{
+    background-image: url(./white_king.png);
+    background-size: cover;
+}
